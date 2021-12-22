@@ -1,8 +1,10 @@
 <?php
 
 namespace App\db;
+use App\db;
 
 use \PDO;
+use \PDOException;
 
 class Database{
 
@@ -66,7 +68,7 @@ class Database{
             $this->connection = new PDO('mysql:host='.self::HOST.';dbname='.self::NAME,self::USER,self::PASS);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         }catch(PDOException $e){
-            die('ERROR: '.$e->getMensage());
+            die('ERROR: '.$e->getMessage());
         }
     }
         /**
@@ -81,7 +83,7 @@ class Database{
                 $statement->execute($params);
                 return $statement;
             }catch(PDOException $e){
-                die('ERROR: '.$e->getMensage());
+                die('ERROR: '.$e->getMessage());
             }
         
         }
@@ -105,7 +107,27 @@ class Database{
             //Retorna  id inserido
             return $this->connection->lastInsertId();
         }
-    
+        
+        /**
+         *  Método responsável por executar uma consulta no banco
+         * @param string $where
+         * @param string $order
+         * @param string $limit
+         * @param string $fields
+         * @return PDOStatement
+         */
+        public function select($where=null, $order=null,$limit=null, $fields='*'){
+                //Dados da query
+                $where = strlen($where) ? 'WHERE'.$where: '';
+                $order = strlen($order) ? 'ORDER BY'.$order: '';
+                $limit = strlen($limit) ? 'LIMIT'.$limit: '';
+
+                //Monta a query
+                $query = 'SELECT '.$fields.' FROM '.$this->table. ' '.$where.' '.$order.' '.$limit;
+                
+                //Executa a query
+                return $this->execute($query); 
+        }
 }
 
 

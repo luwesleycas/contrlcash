@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="modelo.js"></script>
+   
     <title>Document</title>
     
 </head>
@@ -75,6 +74,13 @@
         grid-column-end: 3;
         
     }
+    .content-small{
+        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        overflow:scroll;
+       
+    }
     .footer{
         
         grid-column-start: 1;
@@ -90,15 +96,26 @@
             <h1>Control Cash</h1> 
         </div>  
         <div class="header-end">
+        
+        
+        <div class="btn-group">
         <a href="index.php" class="btn btn-primary">Vortar</a>
+  <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="detalhado.php">Detalhado</a></li>
+    
+  </ul>
+</div>
         </div>
             
         
         <div class="content-large">Content #1a
-            
+        
         </div>
-        <div class="content-small">Content #2</div> 
-
+        
+        <!-- <div class="content-small">Content #2a</div> -->
         <!-- <h1>Control Cash</h1> 
             
             <a href="index.php" class="btn btn-primary">Vortar</a> -->
