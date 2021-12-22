@@ -1,0 +1,8 @@
+{
+"name":"control/cash",
+"autoload": {
+    "psr-4": {
+        "App\\":"app/"
+        }
+    }
+}
