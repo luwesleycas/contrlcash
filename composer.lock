@@ -4,8 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7d19e1ceb22172054d18392746d850a",
-    "packages": [],
+    "content-hash": "38e904dff8253c97c6d68e038d4a4eb3",
+    "packages": [
+        {
+            "name": "andersonhsilva/metodos-php",
+            "version": "2021.12.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andersonhsilva/metodos-php.git",
+                "reference": "4993f7eaefbbd80659c942b0f7e27244e5c495f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andersonhsilva/metodos-php/zipball/4993f7eaefbbd80659c942b0f7e27244e5c495f3",
+                "reference": "4993f7eaefbbd80659c942b0f7e27244e5c495f3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Andersonhsilva\\MetodosPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "andersonhsilva",
+                    "email": "anderson.h.silva@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/andersonhsilva/metodos-php/issues",
+                "source": "https://github.com/andersonhsilva/metodos-php/tree/2021.12.11"
+            },
+            "time": "2021-12-08T22:40:57+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

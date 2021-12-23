@@ -10,6 +10,7 @@ class ComposerStaticInit43d67f95eaa7d3f72e6fbcc5f61c7b3d
         'A' => 
         array (
             'App\\' => 4,
+            'Andersonhsilva\\MetodosPhp\\' => 26,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInit43d67f95eaa7d3f72e6fbcc5f61c7b3d
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',
+        ),
+        'Andersonhsilva\\MetodosPhp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/andersonhsilva/metodos-php/src',
         ),
     );
 

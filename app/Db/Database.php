@@ -128,6 +128,44 @@ class Database{
                 //Executa a query
                 return $this->execute($query); 
         }
+
+        /**
+         * Métodp responsável por executar atualizações no banco de dados
+         * @param string
+         * @param array
+         * @return boolean
+         */
+        public function update($where,$values){
+            //Dados da query
+            $fields = array_keys($values);
+            
+            //monta a querry
+            $query = 'UPDATE '.$this->table. ' SET '.implode(' =? ,', $fields).' =?  WHERE '.$where;
+            
+            //Executar a query
+
+            $this->execute($query,array_values($values));
+
+            return true;
+
+        }
+
+        /**
+         * Métodp responsável por excluir atualizações no banco de dados
+         * @param string
+         * @return boolean
+         */
+        public function delete($where){
+            //Monta a query
+            $query = 'DELETE FROM '.$this->table.' WHERE '.$where;
+            
+            //Executa a query
+            $this->execute($query);
+
+            //Retorna sucesso
+            return true;
+
+        }
 }
 
 

@@ -96,18 +96,18 @@
             <h1>Control Cash</h1> 
         </div>  
         <div class="header-end">
+        <?=HEADER?>
         
-        
-        <div class="btn-group">
+        <!-- <div class="btn-group">
         <a href="index.php" class="btn btn-primary">Vortar</a>
   <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="detalhado.php">Detalhado</a></li>
+    <li><a class="dropdown-item" href="detail.php">Detalhado</a></li>
     
   </ul>
-</div>
+</div> -->
         </div>
             
         

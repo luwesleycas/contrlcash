@@ -70,6 +70,14 @@
         grid-row-start: 2;
         grid-column-start: 1;
         grid-column-end: 4;
+        overflow:scroll;
+        }
+    .content-absolute{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        position: absolute;
+        z-index: 1;
         
     }
     .footer{
@@ -83,7 +91,7 @@
 </style>
 <body>
     
-    <div class="container">
+    <div class="container"> <!--
         <div class="header">
             <h1>Control Cash</h1> 
         </div> 
@@ -101,9 +109,8 @@
                         </ul>
                 </div>
             </div>
-        <div class="content-large">Minha Dashboard
+       <div class="content-large">Minha Dashboard
             
-        </div>
-        
+        </div>  
 
-        
+        -->

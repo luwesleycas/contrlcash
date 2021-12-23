@@ -1,5 +1,45 @@
 {
-    "packages": [],
+    "packages": [
+        {
+            "name": "andersonhsilva/metodos-php",
+            "version": "2021.12.11",
+            "version_normalized": "2021.12.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andersonhsilva/metodos-php.git",
+                "reference": "4993f7eaefbbd80659c942b0f7e27244e5c495f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andersonhsilva/metodos-php/zipball/4993f7eaefbbd80659c942b0f7e27244e5c495f3",
+                "reference": "4993f7eaefbbd80659c942b0f7e27244e5c495f3",
+                "shasum": ""
+            },
+            "time": "2021-12-08T22:40:57+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Andersonhsilva\\MetodosPhp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "andersonhsilva",
+                    "email": "anderson.h.silva@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/andersonhsilva/metodos-php/issues",
+                "source": "https://github.com/andersonhsilva/metodos-php/tree/2021.12.11"
+            },
+            "install-path": "../andersonhsilva/metodos-php"
+        }
+    ],
     "dev": true,
     "dev-package-names": []
 }

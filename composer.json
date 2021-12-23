@@ -4,5 +4,8 @@
     "psr-4": {
         "App\\":"app/"
         }
+    },
+    "require": {
+        "andersonhsilva/metodos-php": "^2021.12"
     }
 }

@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\' => array($baseDir . '/app'),
+    'Andersonhsilva\\MetodosPhp\\' => array($vendorDir . '/andersonhsilva/metodos-php/src'),
 );

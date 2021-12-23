@@ -1,9 +1,11 @@
-<?php 
+<?php
+
+use Andersonhsilva\MetodosPhp\Metodos;
 
 $resultado ='';
 foreach($entrada as $entra){
     $resultado .= '<tr>
-                    <td>R$ '.$nombre_format_francais = number_format($entra->value, 2, ',', ' ').'</td>
+                    <td>R$ '.Metodos::exibir_double($entra->value).'</td>
                     <td>'.date('d/m/Y',strtotime($entra->date)).'</td>
                     <td></td>
                     </tr>';
@@ -22,7 +24,7 @@ foreach($entrada as $entra){
             </tr>
         </thead>
         <tbody>
-          <?php echo $resultado?>  
+          <?= $resultado?>  
         </tbody>
     </table>
 

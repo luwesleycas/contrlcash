@@ -2,7 +2,8 @@
 
     namespace App\Entity;
 
-    use \App\Db\Database;
+use Andersonhsilva\MetodosPhp\Metodos;
+use \App\Db\Database;
     
     use \PDO;
 
@@ -48,8 +49,6 @@
                         'date'=> $this->date,
                         'obs'=> $this->obs
             ]);
-            
-
             //RETORNAR SUCESSO
             return true;
         }
@@ -62,6 +61,39 @@
          */
         public static function getEntrada($where= null, $order=null,$limit=null){
             return(new Database('entrada'))->select($where,$order,$limit)
-                                           ->fetchAll(PDO::FETCH_CLASS,self::class); 
+                                            ->fetchAll(PDO::FETCH_CLASS,self::class); 
         }
+
+
+        /**
+         *  Método responsável por Por atualizara os dados no banco
+         * @return boolean
+         */
+        public function atualizar(){
+            return(new Database('entrada'))->update(' id= '.$this->id,[
+                                                    'value'=> $this->value,
+                                                    'date'=> $this->date,
+                                                    'obs'=> $this->obs
+                                                    ]);
+        }
+        /**
+         *  Método responsável por Por atualizara os dados no banco
+         * @return boolean
+         */
+        public function excluir(){
+            return(new Database('entrada'))->delete('id= '.$this->id);
+        }
+
+        /**
+         *  Método responsável por ebuscar uma vendo com base em seu ID
+         * @param integer $id
+         * @return Entrada
+         */
+        public static function getEdit($id){
+            return(new Database('entrada'))->select(' id = '.$id)
+                                            ->fetchObject(self::class);
+                                            
+        }
+
+    
     }
