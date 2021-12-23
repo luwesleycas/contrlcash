@@ -14,8 +14,8 @@ include __DIR__.'/includes/headermain.php';
                         Menu
                     </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cadastrar.php">Inserir</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="cadastrar.php">Inserir entrada</a></li>
+                            <li><a class="dropdown-item" href="saida.php">inserir saída</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Separated link</a></li>                                               
