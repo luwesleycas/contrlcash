@@ -23,11 +23,11 @@ $entrada = Entrada::getEntrada();
 
 //Validação do POST
 if(isset($_POST['value'],$_POST['date'],$_POST['obs'])){
-    $obEntrada = new Entrada;
-    $obEntrada->value  = $_POST['value'];
-    $obEntrada->date = $_POST['date'];
-    $obEntrada->obs = $_POST['obs'];
-    $obEntrada->cadastrar();
+    $entrada = new Entrada;
+    $entrada->value  = $_POST['value'];
+    $entrada->date = $_POST['date'];
+    $entrada->obs = $_POST['obs'];
+    $entrada->cadastrar();
 
     header('location: cadastrar.php?status=sucess');
     exit;

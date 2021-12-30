@@ -92,8 +92,7 @@ use \App\Db\Database;
          */
         static function getEditS($id){
             return(new Database('saida'))->select(' id = '.$id)
-                                            ->fetchObject(self::class);
-                                            
+                                            ->fetchObject(self::class);                                
         }
 
     

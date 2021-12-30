@@ -19,7 +19,7 @@ define('HEADER','<div class="btn-group">
 use \App\Entity\saida;
 
 
-$saida = Saida::getEntradaS();
+/* $saida = Saida::getEntradaS(); */
 
 
 //Validação do POST

@@ -21,6 +21,7 @@ if(!$obEntrada instanceof Entrada){
         header('location: index.php?status=error');
         exit;
 }
+/* echo "<pre>"; print_r($obEntrada); echo "</pre>"; exit; */
 
 //Validação do POST
 if(isset($_POST['value'],$_POST['date'],$_POST['obs'])){
