@@ -2,10 +2,8 @@
     <h4><?=TITLE?> </h4>
     <form method="post">
         Valor
-        <input type="number"  name="value" id="in_val" step="0.01" min="0" max="999999" value="<?=$obEntrada->value?>">
+        <input type="number"  name="value" id="in_val" step="0.01" min="0" max="999999" value="<?=$obEntrada->value?>" required>
         Data
-        
-        
         <input type="datetime-local" name="date" id="in_date" value="<?= date('Y-m-d\TH:i',strtotime($obEntrada->date))?>">
         </br>
         Obs

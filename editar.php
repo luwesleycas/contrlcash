@@ -8,6 +8,8 @@ define('HEADER','<a class="btn btn-primary" href="detail.php">Voltar</a>');
 
 use \App\Entity\entrada;
 
+$entrada = Entrada::getEntrada();
+
 //Validação da vaga
 if(!isset($_GET['id']) or !is_numeric($_GET['id'])){
         header('location: index.php?status=error');
